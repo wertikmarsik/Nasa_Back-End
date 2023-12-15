@@ -19,7 +19,7 @@ public class main {
             System.out.println("Вхід успішний. Ласкаво просимо, " + username + "!");
             return true;
         } else {
-            System.out.println("Помилка входу. Перевірте ім'я користувача та пароль.");
+            System.out.println("Помилка входу. Перевірте логін та пароль.");
             return false;
         }
     }
@@ -28,7 +28,7 @@ public class main {
         main authenticationSystem = new main();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введіть ім'я користувача:");
+        System.out.println("Введіть логін:");
         String username = scanner.nextLine();
 
         System.out.println("Введіть пароль:");
@@ -36,7 +36,7 @@ public class main {
 
         authenticationSystem.registerUser(username, password);
 
-        System.out.println("Введіть ім'я користувача для входу:");
+        System.out.println("Введіть логін для входу:");
         String loginUsername = scanner.nextLine();
 
         System.out.println("Введіть пароль для входу:");
